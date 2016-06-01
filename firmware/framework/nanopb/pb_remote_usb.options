@@ -1,0 +1,39 @@
+
+EnpointRequest.endpoint_number 					int_size:8
+GetStringDescriptorRequest.string_number		int_size:8
+GetStringDescriptorRequest.lang_idg_id			int_size:8
+GetStringDescriptorRequest.timeout				int_size:16
+
+SetConfigurationRequest.configuration_number	int_size:8
+
+ReadRequest.endpoint_number						int_size:8
+ReadRequest.length								int_size:8
+ReadRequest.timeout								int_size:16
+
+WriteRequest.endpoint_number					int_size:8
+WriteRequest.data								max_size:64
+WriteRequest.timeout							int_size:8
+
+//GetCurrentConfigurationDescriptorResponse.configuration_descriptor
+
+//GetDeviceDescriptorResponse.device_descriptor
+
+//GetStringDescriptorResponseGetStringDescriptorResponse.string_descriptor
+
+ReadResponse.data								max_size:64
+
+//IssueDeviceRequestGetResponse.data
+
+UsbServiceRequest.method				 		int_size:8
+//UsbServiceRequest.call_id
+
+UsbServiceResponse.method						int_size:8
+//UsbServiceResponse.call_id
+UsbServiceResponse.res							int_size:8
+
+IssueDeviceRequestRequest.request_type			int_size:8
+IssueDeviceRequestRequest.request				int_size:8
+IssueDeviceRequestRequest.value					int_size:16
+IssueDeviceRequestRequest.index					int_size:16
+IssueDeviceRequestRequest.timeout				int_size:16
+//IssueDeviceRequestRequest.data
